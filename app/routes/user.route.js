@@ -1,4 +1,4 @@
-import passport from 'passport';
+const passport = require('passport');
 var user = require('../controllers/user.controller');
 
 module.exports = (app) => {

@@ -1,4 +1,4 @@
-import index from '../controllers/index.controller';
+const index = require('../controllers/index.controller');
 const path = '/api/index';
 
 module.exports = (app) => {

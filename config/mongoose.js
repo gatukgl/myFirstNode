@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 module.exports = function () {
     var config = require('./config');
@@ -12,4 +12,4 @@ module.exports = function () {
     require('../app/models/user.model');
     require('../app/models/post.model');
     return db;
-} 
+}

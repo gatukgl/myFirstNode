@@ -1,7 +1,7 @@
-import passport from 'passport';
+const passport = require('passport');
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-import config from '../config.js';
-import user from '../../app/controllers/user.controller';
+const config = require('../config.js');
+const user = require('../../app/controllers/user.controller');
 
 module.exports = () => {
     passport.use(new GoogleStrategy({

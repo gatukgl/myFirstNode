@@ -1,9 +1,9 @@
-import express from 'express';
-import morgan from 'morgan';
-import compression from 'compression';
-import bodyParser from 'body-parser';
-import session from 'express-session';
-import passport from 'passport';
+const express = require('express');
+const morgan = require('morgan');
+const compression = require('compression');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const passport = require('passport');
 
 module.exports = function () {
     const app = express();

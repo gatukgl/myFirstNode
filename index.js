@@ -1,6 +1,7 @@
-import mongoose from './config/mongoose';
-import express from './config/express';
-import passport from './config/passport';
+const express = require('./config/express');
+const passport = require('./config/passport');
+const mongoose = require('./config/mongoose');
+
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 process.env.PORT = process.env.PORT || 3000;

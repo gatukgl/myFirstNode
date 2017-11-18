@@ -1,5 +1,5 @@
-import passport from 'passport';
-import mongoose from 'mongoose';
+const passport = require('passport');
+const mongoose = require('mongoose');
 
 module.exports = () => {
     var User = mongoose.model('User');
