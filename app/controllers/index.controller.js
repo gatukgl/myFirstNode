@@ -13,6 +13,6 @@ exports.home = (req, res) => {
         res.render((path.join(__dirname + '/../views/home.html')), { username: req.user.username });
     }
     else {
-        res.status(400).send({ message: 'User is not signed in' });
+        res.status(200).send({ message: 'Not successfully sign in.' });
     }
 }
