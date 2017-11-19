@@ -43,7 +43,7 @@ exports.getOne = (req, res, next) => {
 
 exports.getMyPost = (req, res, next) => {
     if (req.user) {
-        var username = req.user.username;
+        var username = req.params.username;
         console.log(username);
         Post.find({ author: username }, (err, data) => {
             if (err) {
